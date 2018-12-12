@@ -13,15 +13,19 @@
         <a-asset-item id="balloon-obj" src="assets/hotballoon.obj"></a-asset-item>
         <a-asset-item id="balloon-mtl" src="assets/hotballoon.mtl"></a-asset-item>
       </a-assets>
-    	<a-marker-camera type='pattern' url='assets/rocket.patt'>
-        <a-obj-model src="#balloon-obj" mtl="#balloon-mtl" scale=".0004 .0004 .0004" rotation="270 0 0" position="0 0 0">
+      <a-marker type='pattern' url='assets/rocket.patt'>
+        <a-obj-model src="#balloon-obj" mtl="#balloon-mtl" scale=".1 .1 .1" position="0 0 0">
           <a-animation attribute="position"
-               dur="10000"
-               fill="forwards"
-               to="0 3 0"
-               repeat="indefinite"></a-animation>
+            dur="10000"
+            fill="forwards"
+            to="0 1 0"
+            repeat="indefinite">
+           </a-animation>
         </a-obj-model>
-    	</a-marker-camera>
+    	</a-marker>
+
+      <a-entity camera></a-entity>
+      
     </a-scene>
   </body>
 </html>
